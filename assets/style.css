@@ -1,0 +1,322 @@
+body {
+  background: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.full {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background: url(./img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+strong {
+  font-weight: 700;
+}
+
+a, a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#preloader {
+  background: #333;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+#status {
+  height: 64px;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 64px;
+}
+
+.logo {
+  padding-bottom: 80px;
+  font-size: 36px;
+}
+
+.logo i {
+  color: #1fba99;
+}
+
+.coming-soon {
+  color: #fff;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.coming-soon h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  text-shadow: 0 1px 7px rgba(0,0,0,.2);
+  text-transform: uppercase;
+}
+
+.coming-soon h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  margin-top: 40px;
+  opacity: 0.3;
+}
+
+.coming-soon p {
+  background: rgba(45,45,45,.2);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.counter {
+  margin-top: 10px;
+  text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+.counter .days-wrapper,
+.counter .hours-wrapper,
+.counter .minutes-wrapper,
+.counter .seconds-wrapper {
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  background: #2d2d2d; /* browsers that don't support rgba */
+  background: rgba(45,45,45,.5);
+  border-radius: 80px;
+  display: inline-block;
+  font-size: 18px;
+  height: 140px;
+  margin: 0 10px;
+  padding-top: 20px;
+  width: 160px;
+}
+
+.counter .days,
+.counter .hours,
+.counter .minutes,
+.counter .seconds {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+.subscribe {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.subscribe h3 {
+  background: rgba(45,45,45,.3);
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 10px 20px;
+}
+
+.subscribe p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.subscribe form {
+  margin-top: 24px;
+}
+
+.subscribe form input {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  background: #fff;
+  border-radius: 3px;
+  border: 0;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0;
+  padding: 0 10px;
+  width: 310px;
+}
+
+.subscribe form input:focus {
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+}
+
+.subscribe form input:-moz-placeholder {
+  color: #888;
+}
+
+.subscribe form input:-ms-input-placeholder {
+  color: #888;
+}
+
+.subscribe form input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.subscribe form button {
+  background: #1BBC9B;
+  border-radius: 3px;
+  border: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 46px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0;
+  width: 130px;
+}
+
+.subscribe form button:hover {
+  background: #16a084;
+  color: #fff;
+}
+
+.subscribe form button:active {
+  background: #1BBC9B;
+  color: #fff;
+}
+
+.social {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.social a i {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.social a i:hover {
+  color: #1BBC9B;
+}
+
+.copyright {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.copyright a {
+  border-bottom: 1px dotted #1BBC9B;
+}
+
+/***** Media Queries *****/
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .logo h1 {
+    padding-left: 0;
+  }
+
+  .counter .days-wrapper,
+  .counter .hours-wrapper,
+  .counter .minutes-wrapper,
+  .counter .seconds-wrapper {
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    height: 120px;
+    margin: 0 7px;
+    padding-top: 20px;
+    width: 140px;
+  }
+
+  .counter .days,
+  .counter .hours,
+  .counter .minutes,
+  .counter .seconds {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .coming-soon h2 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  .coming-soon p {
+    padding: 0 20px;
+  }
+
+  .counter .days-wrapper,
+  .counter .hours-wrapper,
+  .counter .minutes-wrapper,
+  .counter .seconds-wrapper {
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    height: 120px;
+    margin: 7px;
+    padding-top: 20px;
+    width: 140px;
+  }
+
+  .counter .days,
+  .counter .hours,
+  .counter .minutes,
+  .counter .seconds {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .subscribe h3 {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .subscribe p {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe form {
+    padding: 0 20px;
+  }
+
+  .subscribe form input {
+    width: 90%;
+  }
+
+  .subscribe form button {
+    margin-top: 10px;
+    width: 90%;
+  }
+}
